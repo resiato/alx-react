@@ -1,7 +1,5 @@
 import $ from "jquery";
 
-console.log("Holberton Dashboard")
-
-console.log("Dashboard Data For The Students")
-
-console.log("Copyright - Holberton School")
+$('body').append('<p>Holberton Dashboard</p>');
+$('body').append('<p>Dashboard data for the students</p>');
+$('body').append('<p>Copyright - Holberton School</p>');
