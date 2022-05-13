@@ -2,7 +2,7 @@
 const getFullYear = () => {
   let this_year = new Date().getFullYear();
   return this_year;
-};
+}
 
 // Function that return Holberton School if isIndex is true and Holberton School main dashboard if false
 const getFooterCopy = (isIndex) => {
@@ -13,7 +13,13 @@ const getFooterCopy = (isIndex) => {
   }
 }
 
+//function that returns a string
+const getLatestNotification = () => {
+  return "<strong>Urgent requirement</strong> - complete by EOD";
+}
+
 module.exports = {
 	getFooterCopy,
 	getFullYear,
+	getLatestNotification
 };
