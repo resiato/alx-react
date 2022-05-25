@@ -11,6 +11,7 @@ div {
   padding: 2px 8px;
 }
 
+
 .App {
   position: relative;
   min-height: 100vh;
@@ -24,7 +25,7 @@ div {
 }
 
 .App-header img {
-  width: 150px;
+  width: 200px;
 }
 
 .App-header h1 {
@@ -32,12 +33,12 @@ div {
   color: var(--holberton-red);
 }
 
-.App-body  {
+.App-body {
   padding: 36px 24px;
-} 
+}
 
 .App-body input {
-  margin: 0 16px 0 8px ;
+  margin: 0 16px 0 8px;
 }
 
 .App-footer {
