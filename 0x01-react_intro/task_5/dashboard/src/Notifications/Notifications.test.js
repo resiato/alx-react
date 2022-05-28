@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow } from 'enzyme';
-import Notifications from './Notifications';
+import { Notifications } from './Notifications';
 
 describe("Testing the <Notifications /> Component", () => {
   

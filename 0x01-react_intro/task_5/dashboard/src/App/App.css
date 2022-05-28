@@ -11,6 +11,7 @@ div {
   padding: 2px 8px;
 }
 
+
 .App {
   position: relative;
   min-height: 100vh;
@@ -24,7 +25,7 @@ div {
 }
 
 .App-header img {
-  width: 150px;
+  width: 200px;
 }
 
 .App-header h1 {

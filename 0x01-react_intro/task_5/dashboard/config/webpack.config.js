@@ -1,16 +1,19 @@
-const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
 
 module.exports = {
   mode: "development",
-  devtool: "inline-source-map",
+  devtool: 'inline-source-map',
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
-    path: path.resolve("./dist"),
+    path: path.resolve(__dirname, "./dist"),
   },
   devServer: {
     hot: true,
-    contentBase: path.resolve("./dist"),
+    static: {
+      directory: path.join(__dirname, "./dist")
+     },
     compress: true,
     port: 8564,
   },
@@ -23,7 +26,9 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        use: {
+	    loader: "babel-loader"
+	    }
       },
       {
         test: /\.css$/i,
@@ -43,5 +48,11 @@ module.exports = {
         ],
       },
     ],
-  },
+   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./dist/index.html",
+       title: "Holberton Dashboard",
+    })
+  ]
 };
